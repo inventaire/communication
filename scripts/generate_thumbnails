@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -eu
+
+build_thumbnails(){
+  for f in $@;
+  do
+    gm convert $f -interlace Line -flatten ./thumbnails/$(basename "$f").jpg
+  done
+}
+
+build_thumbnails ./stickers/*
+build_thumbnails ./flyers/*

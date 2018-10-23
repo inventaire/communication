@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -eu
+
+remove_exif(){
+  for f in $@;
+  do
+    exiftool -all= $f
+    [ -e "${f}_original" ] && mv "${f}_original" /tmp
+    qpdf --linearize $f "${f}_linearized"
+    mv $f /tmp
+    mv "${f}_linearized" $f
+  done
+}
+
+remove_exif ./stickers/*
+remove_exif ./flyers/*
