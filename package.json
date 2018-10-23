@@ -1,0 +1,31 @@
+{
+  "name": "inventaire-communication",
+  "version": "1.0.0",
+  "description": "communication assets for inventaire.io",
+  "main": "index.js",
+  "scripts": {
+    "build": "./scripts/build",
+    "deploy": "./scripts/deploy",
+    "start": "live-server .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inventaire/communication.git"
+  },
+  "keywords": [
+    "inventaire.io",
+    "communication",
+    "stickers",
+    "flyers"
+  ],
+  "author": "",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/inventaire/communication/issues"
+  },
+  "homepage": "https://github.com/inventaire/communication#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}

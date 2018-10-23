@@ -1,0 +1,35 @@
+body{
+  background-color: #ddd;
+  font-family: sans-serif;
+}
+h2{
+  text-align: center;
+}
+section, ul li a{
+  border-radius: 3px;
+  padding: 1em;
+  margin: 1em;
+}
+section, section > div, ul, ul li a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+section{
+  background-color: #f6f6f6;
+}
+section > div{
+  flex-direction: column;
+}
+ul li{
+  list-style: none;
+}
+ul li a{
+  flex-direction: column;
+  background-color: white;
+  text-decoration: none;
+}
+a span{
+  color: grey;
+}

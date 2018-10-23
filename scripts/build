@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+mkdir -p ./thumbnails
+rm -f thumbnails/*
+./scripts/generate_thumbnails
