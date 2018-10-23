@@ -15,6 +15,7 @@ section{
 }
 ul{
   display: flex;
+  flex-wrap: wrap;
 }
 ul li{
   list-style: none;
