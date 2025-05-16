@@ -1,6 +1,10 @@
 #!/usr/bin/env bash
 set -eu
 
+# 2025-05-16: the script fails with
+#   gm convert: Unable to read font (/usr/share/fonts/type1/gsfonts/n019004l.pfb) [No such file or directory].
+# Nothing here could help https://stackoverflow.com/questions/13936256/imagemagick-error-while-running-convert-convert-unable-to-read-font
+
 build_thumbnails(){
   for f in $@;
   do
